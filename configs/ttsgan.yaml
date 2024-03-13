@@ -1,0 +1,30 @@
+model_params:
+  name: TTSGAN
+  n_dim: 6
+  n_latent_dim: 6
+  seq_length: 1
+  patch_size: 1
+  emb_size: 100
+  depth: 8
+  n_classes: 1
+  n_heads: 5
+  forward_dropout_rate: 0
+  attention_dropout_rate: 0
+  forward_expansion: 4
+
+experiment_params:
+  experiment_class: GANExperiment
+  discriminator_learning_rate: 0.00001
+  generator_learning_rate: 0.000001
+  n_discriminator_steps: 32
+  n_generator_steps: 4
+  manual_seed: 1337
+
+data_params:
+  batch_size: 32
+  val_split_size: 0.25
+  test_split_size: 0.25
+  train_val_shuffle: false
+
+trainer_params:
+  max_epochs: 100

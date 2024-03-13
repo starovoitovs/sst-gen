@@ -1,0 +1,38 @@
+model_params:
+  model_name: CNF
+  n_latent_dim: 6
+  # number of affine layers
+  n_layers: 6
+  # number of hidden features in MADE (better divisible by 5)
+  n_hidden_features: 5
+  # number of blocks in the MADE autoregressive net
+  n_blocks: 4
+  dropout_probability: 0.0
+  use_batch_norm_within_layers: true
+  use_batch_norm_between_layers: true
+  use_random_permutations: false
+  use_residual_blocks: true
+  use_random_masks: false
+
+experiment_params:
+  manual_seed: 1337
+  learning_rate: 0.0001
+  patience: 10
+  factor: 0.1
+  lr_scheduler_metric: val_kendall
+
+data_params:
+  # index from 0 to 5
+  train_dims: [0, 1, 2, 3, 4, 5]
+  test_dims: [0, 1, 2, 3, 4, 5]
+  start_train_date: 1981-09-01
+  end_train_date: 2016-12-31
+  start_test_date: 2008-01-01
+  end_test_date: 2016-12-31
+  val_split_size: 0.2
+  train_val_shuffle: true
+  train_permute_coords: true
+  batch_size: 32
+
+trainer_params:
+  max_epochs: 50

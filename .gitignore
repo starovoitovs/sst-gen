@@ -1,0 +1,18 @@
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+# IDE #
+################
+.vscode/
+.idea/
+__pychache__
+.ipynb_checkpoints/
+.Rhistory
+
+mlruns
+__pycache__
+lightning_logs
+mlflow.db

@@ -1,0 +1,16 @@
+artifact_path: best_ad_mean
+flavors:
+  python_function:
+    data: data
+    env: conda.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.9.13
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 1.12.1
+mlflow_version: 1.29.0
+model_uuid: e470312b77874520aaaf9c7b50b98897
+run_id: bb5304b5b3fd4609967377bcde0ebb20
+utc_time_created: '2022-12-03 23:09:23.448636'

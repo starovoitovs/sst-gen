@@ -1,0 +1,17 @@
+model_params:
+  name: KDE
+  n_dim: 6
+  n_latent_dim: 6
+  bw_method: 0.1
+
+experiment_params:
+  manual_seed: 1337
+
+data_params:
+  batch_size: 100000
+  val_split_size: 0.25
+  test_split_size: 0.25
+  train_val_shuffle: false
+
+trainer_params:
+  max_epochs: 0

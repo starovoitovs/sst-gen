@@ -1,0 +1,42 @@
+data_params:
+  batch_size: 32
+  end_test_date: 2016-12-31
+  end_train_date: 2016-12-31
+  start_test_date: 2008-01-01
+  start_train_date: 2008-01-01
+  test_dims:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  train_dims:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  train_permute_coords: false
+  train_val_equal: true
+experiment_params:
+  manual_seed: 1337
+model_params:
+  kernel_params:
+    formula: k1 * k2
+    kernels:
+    - class_name: ConstantKernel
+      kwargs:
+        constant_value: 1.58
+        constant_value_bounds: fixed
+      name: k1
+    - class_name: RBF
+      kwargs:
+        length_scale: 6.81
+        length_scale_bounds: fixed
+      name: k2
+  model_name: GPR
+trainer_params:
+  max_epochs: 0
+  num_sanity_val_steps: 1

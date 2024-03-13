@@ -1,0 +1,22 @@
+model_params:
+  name: LDM
+  n_dim: 6
+  n_latent_dim: 6
+  n_timesteps: 10
+  n_unet_dim: 4
+  n_resnet_block_groups: 1
+
+experiment_params:
+  learning_rate: 0.001
+  manual_seed: 1337
+
+data_params:
+  batch_size: 32
+  val_split_size: 0.25
+  test_split_size: 0.25
+  train_val_shuffle: false
+
+trainer_params:
+  max_epochs: 0
+  accelerator: gpu
+  devices: 1 

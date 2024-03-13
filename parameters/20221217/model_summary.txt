@@ -1,0 +1,8 @@
+  | Name  | Type | Params
+-------------------------------
+0 | model | GPR  | 0     
+-------------------------------
+0         Trainable params
+0         Non-trainable params
+0         Total params
+0.000     Total estimated model params size (MB)
